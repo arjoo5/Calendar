@@ -1,0 +1,52 @@
+
+h1 {
+  text-align: center;
+}
+
+.card-body {
+height: 150px;
+padding: unset;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+}
+
+.card-header {
+background-color: #AB9EEE;
+color: #ffffff;
+font-weight: 600;
+text-align: end;
+padding: .75rem .75rem;
+}
+
+.json-editor {
+font-family: 'Roboto', sans-serif;
+width: 100%;
+min-height: 400px;
+font-size: 14px;
+border: 1px solid gray;
+}
+
+.day__person {
+color: #ffffff;
+font-weight: 800;
+text-align: center;
+position: relative;
+
+}
+
+.day--empty {
+background-color: lightgrey;
+content:url(https://via.placeholder.com/200x200.png?text=No+Birthday);
+}
+
+
+.person-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 20px;
+  }

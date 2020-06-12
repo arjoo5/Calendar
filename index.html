@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <title>Calendar App</title>
+</head>
+
+<body>
+  <div class="mt-4">
+    <h1 class="display-5 text-center">
+      <span class="font-weight-bold">WorkArea</span></h1>
+    <div class="row justify-content-center card-deck ml-3 mr-3">
+
+      <div class="card">
+        <div class="card-header">
+          MON
+        </div>
+        <div class="card-body cal__day" id="Monday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          TUE
+        </div>
+        <div class="card-body cal__day" id="Tuesday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          WED
+        </div>
+        <div class="card-body cal__day" id="Wednesday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          THU
+        </div>
+        <div class="card-body cal__day" id="Thursday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          FRI
+        </div>
+        <div class="card-body cal__day" id="Friday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          SAT
+        </div>
+        <div class="card-body cal__day" id="Saturday">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          SUN
+        </div>
+        <div class="card-body cal__day" id="Sunday">
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4 ml-3 mr-3">
+      <div class="col-sm-7 mt-4 " id="json-grid">
+        <div class="input-group h-100">
+          <textarea class="json-editor" id="json-area" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+      <div class="col-sm-5" id="year-grid">
+        <h1 class="display-6 text-center">Year</h1>
+        <div class="input-group mb-3">
+          <input type="number" maxlength=4 required class="form-control" id="year-input" placeholder="Year">
+        </div>
+        <button type="button" id="update-button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+    <script src="/bundle.js"></script>
+</body>
+
+</html>
