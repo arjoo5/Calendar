@@ -79,6 +79,7 @@ var generatePersonsForADay = (weekday, calendar) => {
   let birthdays = calendar[weekday]; // array contains details of all person on particular weekday
   if (birthdays) {
     let dimension = getDimensions(birthdays.length);
+    day.classList.remove('day--empty');
     birthdays.forEach((person) => generatePersonSquare(person,dimension,day));
   } else {
     day.classList.add('day--empty');
